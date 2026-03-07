@@ -175,37 +175,44 @@ The automation approach includes:
 
 The project is organized using a modular automation architecture based on **Page Object Model**, reusable test data and continuous integration execution.
 
-
 qa-test-automation-playground
 │
 ├── .github
-│ └── workflows
-│ └── cypress-tests.yml
+│   └── workflows
+│       └── cypress-tests.yml
 │
 ├── assets
-│ └── cypress-demo.gif
+│   └── cypress-demo.gif
 │
 ├── examples
-│ └── cypress-demo
-│ ├── cypress
-│ │ ├── e2e
-│ │ │ ├── login.cy.js
-│ │ │ └── cart.cy.js
-│ │ │
-│ │ ├── fixtures
-│ │ │ └── users.json
-│ │ │
-│ │ ├── pages
-│ │ │ ├── LoginPage.js
-│ │ │ ├── InventoryPage.js
-│ │ │ └── CartPage.js
-│ │ │
-│ │ └── support
-│ │ └── e2e.js
-│ │
-│ ├── cypress.config.js
-│ ├── package.json
-│ └── package-lock.json
+│   └── cypress-demo
+│       ├── cypress
+│       │   ├── e2e
+│       │   │   ├── login.cy.js
+│       │   │   └── cart.cy.js
+│       │   │
+│       │   ├── fixtures
+│       │   │   └── users.json
+│       │   │
+│       │   ├── pages
+│       │   │   ├── LoginPage.js
+│       │   │   ├── InventoryPage.js
+│       │   │   └── CartPage.js
+│       │   │
+│       │   └── support
+│       │       └── e2e.js
+│       │
+│       ├── cypress.config.js
+│       ├── package.json
+│       └── package-lock.json
+│
+├── architecture
+│   └── automation-architecture.md
+│
+├── docs
+│
+├── references
+│   └── bibliography.md
 │
 └── README.md
 
