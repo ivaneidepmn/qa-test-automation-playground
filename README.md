@@ -38,24 +38,23 @@ This repository explores several important areas of **Software Quality Engineeri
 
 ---
 
-# 📊 Test Pyramid
+## 📊 Test Pyramid
 
 <p align="center">
-  <img src="assets/test-pyramid-diagram.png" width="800">
+  <img src="assets/test-pyramid-diagram.png" width="600">
 </p>
 
-The **Test Pyramid**, introduced by Martin Fowler, suggests that a healthy testing strategy should include:
+The **Test Pyramid**, introduced by Martin Fowler, describes a balanced testing strategy.
 
-| Layer | Description |
-|------|-------------|
-| Unit Tests | Fast and numerous tests validating isolated logic |
-| Integration Tests | Validate communication between components |
-| End-to-End Tests | Validate complete user flows |
+| Layer | Focus |
+|------|------|
+| Unit Tests | Fast validation of business logic |
+| Integration Tests | Component and API communication |
+| End-to-End Tests | Validation of complete user flows |
 
-A good automation strategy prioritizes **fast and reliable tests at the base** and **fewer expensive UI tests**.
+A good automation strategy prioritizes **many fast tests at the base** and **fewer expensive UI tests at the top**.
 
----
-
+```
 # 🏗 Automation Architecture
 
 The automation example in this repository follows good practices used in professional QA teams:
@@ -64,7 +63,7 @@ The automation example in this repository follows good practices used in profess
 - **Reusable test components**
 - **Externalized test data**
 - **Clean folder structure**
-
+```
 This improves:
 
 - maintainability
