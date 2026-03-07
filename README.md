@@ -1,8 +1,3 @@
-<p align="center">
-  <img src="assets/github-profile-banner.png" width="100%">
-</p>
-# README.md completo
-
 ```markdown
 <p align="center">
   <img src="assets/github-profile-banner.png" width="100%">
@@ -81,6 +76,7 @@ This improves:
 # 📁 Repository Structure
 
 ```
+
 qa-test-automation-playground
 │
 ├── assets
@@ -226,6 +222,8 @@ QA Automation Engineer focused on:
 https://linkedin.com/in/ivaneidepmn
 
 ```
+
+---
 
 ⭐ This repository is part of my **QA Automation Engineering portfolio**.
 
