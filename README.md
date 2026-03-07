@@ -76,6 +76,12 @@ Benefits:
 - improved readability  
 - scalable automation suites  
 
+### Additional framework improvements
+
+- Custom Cypress commands for reusable actions
+- Test Data Builder for flexible test data creation
+- Smoke and regression tags in test scenarios
+
 ---
 
 # 📁 Repository Structure
@@ -126,7 +132,7 @@ Test scenarios implemented:
 
 Example of Cypress tests running in the application.
 
-![Cypress Tests](assets/cypress-demo.gif)
+![Cypress Tests](assets/cypress-run-demo.gif)
 
 ---
 
