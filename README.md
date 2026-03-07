@@ -173,131 +173,98 @@ The automation approach includes:
 
 ## 🏗 Test Architecture Diagram
 
-The project is organized using a modular automation architecture focused on **Page Object Model**, reusable test data and CI execution.
+The project is organized using a modular automation architecture based on **Page Object Model**, reusable test data and continuous integration execution.
 
-```text
+
 qa-test-automation-playground
 │
 ├── .github
-│   └── workflows
-│       └── cypress-tests.yml
+│ └── workflows
+│ └── cypress-tests.yml
 │
 ├── assets
-│   └── cypress-demo.gif
+│ └── cypress-demo.gif
 │
 ├── examples
-│   └── cypress-demo
-│       ├── cypress
-│       │   ├── e2e
-│       │   │   ├── login.cy.js
-│       │   │   └── cart.cy.js
-│       │   ├── fixtures
-│       │   │   └── users.json
-│       │   ├── pages
-│       │   │   ├── LoginPage.js
-│       │   │   ├── InventoryPage.js
-│       │   │   └── CartPage.js
-│       │   └── support
-│       │       └── e2e.js
-│       ├── cypress.config.js
-│       ├── package.json
-│       └── package-lock.json
+│ └── cypress-demo
+│ ├── cypress
+│ │ ├── e2e
+│ │ │ ├── login.cy.js
+│ │ │ └── cart.cy.js
+│ │ │
+│ │ ├── fixtures
+│ │ │ └── users.json
+│ │ │
+│ │ ├── pages
+│ │ │ ├── LoginPage.js
+│ │ │ ├── InventoryPage.js
+│ │ │ └── CartPage.js
+│ │ │
+│ │ └── support
+│ │ └── e2e.js
+│ │
+│ ├── cypress.config.js
+│ ├── package.json
+│ └── package-lock.json
 │
 └── README.md
 
-This structure improves:
-
-scalability
-
-maintainability
-
-readability
-
-CI integration
-
-🔺 Real Test Pyramid of This Project
-Layer	Current Status	Description
-E2E Tests	Implemented	Validates complete user flows such as login, cart and logout
-Page Objects	Implemented	Encapsulates UI interactions and improves maintainability
-Fixtures	Implemented	Stores reusable test data
-Integration/API Tests	Planned	Future improvement for broader test coverage
-Unit Tests	Not in scope	Current repository focus is QA automation with Cypress
-
-Current automated scenarios: 7
-
-This project currently emphasizes End-to-End functional validation, focusing on the main user journeys of the SauceDemo application.
-
-### Test Layers
-
-| Layer | Description |
-|------|-------------|
-| E2E Tests | Validate complete user flows |
-| Page Objects | Encapsulate UI interactions |
-| Fixtures | Manage test data |
-| CI Pipeline | Execute tests automatically |
 
 This architecture improves:
 
-- scalability
-- maintainability
-- readability
-- CI integration
-
-### Test scenarios implemented
-
-- successful login
-- invalid login
-- UI validation
-- error message validation
+- scalability  
+- maintainability  
+- readability  
+- CI integration  
 
 ---
 
-# 🧱 Cypress Project Structure
+## 🔺 Real Test Pyramid of This Project
 
-```
+This project focuses primarily on **End-to-End functional validation**, covering the main user journeys of the SauceDemo application.
 
-examples/cypress-demo
-│
-├── cypress
-│   ├── e2e
-│   │   └── login.cy.js
-│   │
-│   ├── fixtures
-│   │   └── users.json
-│   │
-│   └── pages
-│       └── LoginPage.js
-│
-├── cypress.config.js
-└── package.json
+| Layer | Description |
+|------|-------------|
+| E2E Tests | Validate complete user flows such as login, inventory and cart |
+| Page Objects | Encapsulate UI interactions and improve maintainability |
+| Fixtures | Store reusable test data |
+| CI Pipeline | Executes automated tests using GitHub Actions |
 
-````
+### Current automated scenarios
 
-This structure demonstrates a **clean automation architecture** commonly used in professional QA teams.
+- Login with valid credentials  
+- Login with invalid credentials  
+- Login validation with empty fields  
+- Error message validation  
+- Inventory page validation  
+- Add product to cart  
+- Remove product from cart  
+
+**Total automated scenarios: 7**
 
 ---
 
-# 🧪 Example Automated Test
+## 📦 Example Automated Test
 
-Example of login validation using Cypress:
+Example of login validation implemented using Cypress.
 
 ```javascript
-describe('Login Flow - SauceDemo', () => {
+describe("Login Flow - SauceDemo", () => {
 
-  it('should login successfully', () => {
+  it("should login successfully", () => {
 
-    cy.visit('https://www.saucedemo.com')
+    cy.visit("https://www.saucedemo.com")
 
-    cy.get('[data-test="username"]').type('standard_user')
-    cy.get('[data-test="password"]').type('secret_sauce')
+    cy.get('[data-test="username"]').type("standard_user")
+    cy.get('[data-test="password"]').type("secret_sauce")
 
     cy.get('[data-test="login-button"]').click()
 
-    cy.url().should('include', 'inventory')
-
+    cy.url().should("include", "inventory")
   })
 
 })
+
 ````
 
 ---
