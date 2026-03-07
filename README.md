@@ -1,9 +1,7 @@
 
-```markdown
 <p align="center">
-  <img src="assets/github-profile-banner.png" width="100%">
+<img src="assets/github-profile-banner.png" width="100%">
 </p>
-
 # 🧪 QA Test Automation Playground
 
 Repository created to study, document and demonstrate **Software Quality Engineering and Test Automation practices**.
