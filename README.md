@@ -3,6 +3,7 @@
 <img src="assets/github-profile-banner.png" width="100%">
 </p>
 # 🧪 QA Test Automation Playground
+![Cypress Tests](https://github.com/ivaneidepmn/qa-test-automation-playground/actions/workflows/cypress-tests.yml/badge.svg)
 
 Repository created to study, document and demonstrate **Software Quality Engineering and Test Automation practices**.
 
