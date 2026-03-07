@@ -4,3 +4,12 @@ cypress/screenshots
 .env
 .DS_Store
 node_modules
+examples/cypress-demo/reports/
+# Cypress reports
+examples/cypress-demo/reports/
+
+# Cypress screenshots
+examples/cypress-demo/cypress/screenshots/
+
+# Cypress videos
+examples/cypress-demo/cypress/videos/
