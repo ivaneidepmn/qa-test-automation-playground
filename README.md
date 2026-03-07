@@ -1,4 +1,4 @@
-
+![Cypress Tests](https://github.com/ivaneidepmn/qa-test-automation-playground/actions/workflows/cypress-tests.yml/badge.svg)
 <p align="center">
 <img src="assets/github-profile-banner.png" width="100%">
 </p>
@@ -108,11 +108,25 @@ qa-test-automation-playground
 
 # 🤖 Cypress Automation Example
 
-This repository also includes a practical **Cypress automation project** used as an example of automated testing.
+The repository includes a practical **Cypress automation project**.
 
-Application used for testing:
+Application used:
 
 https://www.saucedemo.com
+
+Test scenarios implemented:
+
+- successful login
+- invalid login
+- UI validation
+- error message validation
+
+
+## 🎥 Test Execution Example
+
+Example of Cypress tests running in the application.
+
+![Cypress Tests](assets/cypress-demo.gif)
 
 ### Test scenarios implemented
 
