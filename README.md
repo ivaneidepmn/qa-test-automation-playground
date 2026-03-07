@@ -171,58 +171,61 @@ The automation approach includes:
 
 ---
 
-## 🏗 Test Architecture Diagram
+## 🧩 Diagrama da Arquitetura de Teste
 
-The project is organized using a modular automation architecture based on **Page Object Model**, reusable test data and continuous integration execution.
+O projeto está organizado utilizando uma arquitetura de automação modular baseada em **Page Object Model**, dados de teste reutilizáveis e execução de integração contínua.
+
 
 qa-test-automation-playground
 │
 ├── .github
-│   └── workflows
-│       └── cypress-tests.yml
+│ └── workflows
+│ └── cypress-tests.yml
 │
 ├── assets
-│   └── cypress-demo.gif
+│ └── cypress-demo.gif
 │
 ├── examples
-│   └── cypress-demo
-│       ├── cypress
-│       │   ├── e2e
-│       │   │   ├── login.cy.js
-│       │   │   └── cart.cy.js
-│       │   │
-│       │   ├── fixtures
-│       │   │   └── users.json
-│       │   │
-│       │   ├── pages
-│       │   │   ├── LoginPage.js
-│       │   │   ├── InventoryPage.js
-│       │   │   └── CartPage.js
-│       │   │
-│       │   └── support
-│       │       └── e2e.js
-│       │
-│       ├── cypress.config.js
-│       ├── package.json
-│       └── package-lock.json
+│ └── cypress-demo
+│ │
+│ ├── cypress
+│ │ │
+│ │ ├── e2e
+│ │ │ ├── login.cy.js
+│ │ │ └── cart.cy.js
+│ │ │
+│ │ ├── fixtures
+│ │ │ └── users.json
+│ │ │
+│ │ ├── pages
+│ │ │ ├── LoginPage.js
+│ │ │ ├── InventoryPage.js
+│ │ │ └── CartPage.js
+│ │ │
+│ │ └── support
+│ │ └── e2e.js
+│ │
+│ ├── cypress.config.js
+│ ├── package.json
+│ └── package-lock.json
 │
 ├── architecture
-│   └── automation-architecture.md
+│ └── automation-architecture.md
 │
 ├── docs
 │
 ├── references
-│   └── bibliography.md
+│ └── bibliography.md
 │
 └── README.md
 
 
-This architecture improves:
+Essa arquitetura aprimora:
 
-- scalability  
-- maintainability  
-- readability  
-- CI integration  
+- escalabilidade
+- capacidade de manutenção
+- legibilidade
+- integração de CI
 
 ---
 
