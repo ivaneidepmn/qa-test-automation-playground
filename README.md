@@ -128,6 +128,63 @@ Example of Cypress tests running in the application.
 
 ![Cypress Tests](assets/cypress-demo.gif)
 
+---
+
+## 📊 Test Coverage
+
+Current automated test scenarios implemented in the project:
+
+### Authentication Tests
+
+- Login with valid credentials
+- Login with invalid credentials
+- Login validation with empty fields
+- Error message validation
+
+### Inventory Tests
+
+- Inventory page elements validation
+- Product list rendering validation
+
+### Cart Tests
+
+- Add product to cart
+- Remove product from cart
+
+**Total automated scenarios: 7**
+
+These tests validate critical user flows of the application ensuring stability and reliability.
+
+---
+
+## 🧠 Test Strategy
+
+This project follows a practical **End-to-End testing strategy** focused on validating the main business flows of the application.
+
+The automation approach includes:
+
+- End-to-End UI testing using Cypress
+- Page Object Model to improve maintainability
+- Test data management using fixtures
+- Modular test architecture
+- CI execution using GitHub Actions
+
+### Test Layers
+
+| Layer | Description |
+|------|-------------|
+| E2E Tests | Validate complete user flows |
+| Page Objects | Encapsulate UI interactions |
+| Fixtures | Manage test data |
+| CI Pipeline | Execute tests automatically |
+
+This architecture improves:
+
+- scalability
+- maintainability
+- readability
+- CI integration
+
 ### Test scenarios implemented
 
 - successful login
