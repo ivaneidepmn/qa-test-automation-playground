@@ -2,8 +2,13 @@
 <p align="center">
 <img src="assets/github-profile-banner.png" width="100%">
 </p>
-# 🧪 QA Test Automation Playground
+# 🧪 Playground de Automação de Testes de QA
+
 ![Cypress Tests](https://github.com/ivaneidepmn/qa-test-automation-playground/actions/workflows/cypress-tests.yml/badge.svg)
+
+Repositório criado para estudar, documentar e demonstrar **práticas de Engenharia de Qualidade de Software e Automação de Testes**.
+
+Este projeto combina **fundamentos teóricos** com **exemplos práticos de testes automatizados** utilizando ferramentas modernas de garantia da qualidade.
 
 Repository created to study, document and demonstrate **Software Quality Engineering and Test Automation practices**.
 
