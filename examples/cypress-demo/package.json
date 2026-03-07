@@ -1,0 +1,12 @@
+{
+  "name": "cypress-demo",
+  "version": "1.0.0",
+  "description": "Practical Cypress automation example for QA Test Automation Playground",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "15.11.0"
+  }
+}
