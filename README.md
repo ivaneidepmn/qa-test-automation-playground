@@ -173,50 +173,59 @@ The automation approach includes:
 
 ## 🏗 Test Architecture Diagram
 
-The project is organized using a modular automation architecture based on **Page Object Model**, reusable test data and CI execution.
+The project is organized using a modular automation architecture focused on **Page Object Model**, reusable test data and CI execution.
 
-```mermaid
-flowchart TD
-    A[GitHub Repository] --> B[Cypress Demo Project]
-    B --> C[cypress/e2e]
-    B --> D[cypress/pages]
-    B --> E[cypress/fixtures]
-    B --> F[cypress/support]
-    B --> G[cypress.config.js]
+```text
+qa-test-automation-playground
+│
+├── .github
+│   └── workflows
+│       └── cypress-tests.yml
+│
+├── assets
+│   └── cypress-demo.gif
+│
+├── examples
+│   └── cypress-demo
+│       ├── cypress
+│       │   ├── e2e
+│       │   │   ├── login.cy.js
+│       │   │   └── cart.cy.js
+│       │   ├── fixtures
+│       │   │   └── users.json
+│       │   ├── pages
+│       │   │   ├── LoginPage.js
+│       │   │   ├── InventoryPage.js
+│       │   │   └── CartPage.js
+│       │   └── support
+│       │       └── e2e.js
+│       ├── cypress.config.js
+│       ├── package.json
+│       └── package-lock.json
+│
+└── README.md
 
-    C --> C1[login.cy.js]
-    C --> C2[cart.cy.js]
+This structure improves:
 
-    D --> D1[LoginPage.js]
-    D --> D2[InventoryPage.js]
-    D --> D3[CartPage.js]
+scalability
 
-    E --> E1[users.json]
+maintainability
 
-    A --> H[GitHub Actions CI]
-    H --> I[Run Cypress Tests]
-    I --> J[Test Results]
-    I --> K[Mochawesome Report]
+readability
 
-    
-## 2. Seção: Real Test Pyramid
+CI integration
 
-Adicione logo abaixo:
+🔺 Real Test Pyramid of This Project
+Layer	Current Status	Description
+E2E Tests	Implemented	Validates complete user flows such as login, cart and logout
+Page Objects	Implemented	Encapsulates UI interactions and improves maintainability
+Fixtures	Implemented	Stores reusable test data
+Integration/API Tests	Planned	Future improvement for broader test coverage
+Unit Tests	Not in scope	Current repository focus is QA automation with Cypress
 
-```markdown
----
+Current automated scenarios: 7
 
-## 🔺 Real Test Pyramid of This Project
-
-This repository currently emphasizes **End-to-End testing**, focused on validating the main user journeys of the SauceDemo application.
-
-```mermaid
-pyramid-beta
-    title Test Pyramid - Current Project Scope
-    "E2E Tests (Login + Cart Flows)" : 7
-    "Integration / API Tests" : 0
-    "Unit Tests" : 0
-    
+This project currently emphasizes End-to-End functional validation, focusing on the main user journeys of the SauceDemo application.
 
 ### Test Layers
 
