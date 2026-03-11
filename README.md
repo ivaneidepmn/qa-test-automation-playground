@@ -10,7 +10,7 @@
 <img src="assets/github-profile-banner.png" width="100%">
 </p>
 
-# 🧪 QA Test Automation Playground
+# 🧪 QA Test Automation Playgroundcd..
 
 Repository created to **study, document and demonstrate Software Quality Engineering and Test Automation practices**.
 
@@ -326,19 +326,3 @@ LinkedIn
 
 ⭐ This repository is part of my **QA Automation Engineering portfolio**.
 
-```
-
----
-
-# O que melhorou nessa versão
-- remove duplicações de texto
-- estrutura mais profissional
-- README mais **escaneável para recrutadores**
-- inglês padronizado
-- hierarquia clara
-- organização de seções
-
----
-
-💡 Se quiser, no próximo passo posso te mostrar **3 melhorias que fazem esse repositório parecer de QA pleno/sênior no GitHub** (são mudanças rápidas mas muito impactantes).
-```
