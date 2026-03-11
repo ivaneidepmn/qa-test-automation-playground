@@ -1,30 +1,34 @@
-![Cypress Tests](https://github.com/ivaneidepmn/qa-test-automation-playground/actions/workflows/cypress-tests.yml/badge.svg)
+<p align="center">
+  <img src="https://img.shields.io/badge/Cypress-Test%20Automation-green" alt="Cypress">
+  <img src="https://img.shields.io/badge/JavaScript-ES6-yellow" alt="JavaScript">
+  <img src="https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-orange" alt="CI/CD">
+  <img src="https://img.shields.io/badge/QA-Automation-blue" alt="QA Automation">
+  <img src="https://github.com/ivaneidepmn/qa-test-automation-playground/actions/workflows/cypress-tests.yml/badge.svg" alt="Cypress Tests">
+</p>
+
 <p align="center">
 <img src="assets/github-profile-banner.png" width="100%">
 </p>
-# 🧪 Playground de Automação de Testes de QA
 
-![Cypress Tests](https://github.com/ivaneidepmn/qa-test-automation-playground/actions/workflows/cypress-tests.yml/badge.svg)
+# 🧪 QA Test Automation Playground
 
-Repositório criado para estudar, documentar e demonstrar **práticas de Engenharia de Qualidade de Software e Automação de Testes**.
+Repository created to **study, document and demonstrate Software Quality Engineering and Test Automation practices**.
 
-Este projeto combina **fundamentos teóricos** com **exemplos práticos de testes automatizados** utilizando ferramentas modernas de garantia da qualidade.
+This project combines **theoretical foundations of QA** with **practical automation examples using Cypress**, demonstrating how automated testing frameworks can be structured in real-world environments.
 
-Repository created to study, document and demonstrate **Software Quality Engineering and Test Automation practices**.
-
-This project combines **theoretical foundations** with **practical examples of automated testing** using modern QA tools.
+This repository is part of my **QA Automation Engineering portfolio**.
 
 ---
 
 # 🎯 Purpose of the Repository
 
-The goal of this repository is to build a **QA Engineering portfolio** demonstrating:
+The goal of this repository is to demonstrate practical knowledge in **Quality Engineering and Test Automation**, including:
 
-- test automation strategies
-- software testing architecture
-- practical automation examples
-- quality engineering concepts
-- CI/CD testing integration
+- Test automation strategies
+- Software testing architecture
+- End-to-End automation examples
+- QA engineering concepts
+- CI/CD integration for automated tests
 
 ---
 
@@ -49,12 +53,12 @@ This repository explores important areas of **Software Quality Engineering**:
   <img src="assets/test-pyramid-diagram.png" width="550">
 </p>
 
-The **Test Pyramid**, introduced by **Martin Fowler**, describes a balanced testing strategy.
+The **Test Pyramid**, introduced by **Martin Fowler**, describes a balanced test automation strategy.
 
 | Layer | Focus |
 |------|------|
 | Unit Tests | Fast validation of business logic |
-| Integration Tests | Component and API communication |
+| Integration Tests | Validation of service and API communication |
 | End-to-End Tests | Validation of complete user flows |
 
 A good automation strategy prioritizes **many fast tests at the base** and **fewer expensive UI tests at the top**.
@@ -63,24 +67,26 @@ A good automation strategy prioritizes **many fast tests at the base** and **few
 
 # 🏗 Automation Architecture
 
-The automation example in this repository follows practices used in professional QA teams:
+The automation approach used in this repository follows practices commonly adopted by professional QA teams.
+
+Main architectural patterns used:
 
 - Page Object Model
 - Reusable test components
 - Externalized test data
-- Clean folder structure
+- Modular folder structure
 
 Benefits:
 
-- better maintainability  
-- improved readability  
-- scalable automation suites  
+- better maintainability
+- improved readability
+- scalable automation suites
 
 ### Additional framework improvements
 
 - Custom Cypress commands for reusable actions
-- Test Data Builder for flexible test data creation
-- Smoke and regression tags in test scenarios
+- Test Data Builder pattern
+- Smoke and regression scenario tagging
 
 ---
 
@@ -105,8 +111,10 @@ qa-test-automation-playground
 ├── examples
 │   └── cypress-demo
 │
-└── references
-└── bibliography.md
+├── references
+│   └── bibliography.md
+│
+└── README.md
 
 ```
 
@@ -114,21 +122,20 @@ qa-test-automation-playground
 
 # 🤖 Cypress Automation Example
 
-The repository includes a practical **Cypress automation project**.
-
-Application used:
+The repository includes a **practical Cypress automation project** using the application:
 
 https://www.saucedemo.com
 
-Test scenarios implemented:
+Implemented test scenarios include:
 
-- successful login
-- invalid login
-- UI validation
-- error message validation
+- Successful login
+- Invalid login validation
+- UI element validation
+- Error message validation
 
+---
 
-## 🎥 Test Execution Example
+# 🎥 Test Execution Example
 
 Example of Cypress tests running in the application.
 
@@ -136,9 +143,9 @@ Example of Cypress tests running in the application.
 
 ---
 
-## 📊 Test Coverage
+# 📊 Test Coverage
 
-Current automated test scenarios implemented in the project:
+Current automated scenarios implemented in the project.
 
 ### Authentication Tests
 
@@ -159,27 +166,28 @@ Current automated test scenarios implemented in the project:
 
 **Total automated scenarios: 7**
 
-These tests validate critical user flows of the application ensuring stability and reliability.
+These scenarios validate the **core user flows of the application**.
 
 ---
 
-## 🧠 Test Strategy
+# 🧠 Test Strategy
 
-This project follows a practical **End-to-End testing strategy** focused on validating the main business flows of the application.
+This project adopts an **End-to-End testing strategy** focusing on validating the main business flows.
 
-The automation approach includes:
+Automation approach includes:
 
-- End-to-End UI testing using Cypress
-- Page Object Model to improve maintainability
+- End-to-End UI testing with Cypress
+- Page Object Model architecture
 - Test data management using fixtures
 - Modular test architecture
 - CI execution using GitHub Actions
 
-## 🧩 Diagrama da Arquitetura de Teste
+---
 
-O projeto está organizado utilizando uma arquitetura de automação modular baseada em **Page Object Model**, dados de teste reutilizáveis e execução de integração contínua.
+# 🧩 Test Automation Architecture
 
 ```
+
 qa-test-automation-playground
 │
 ├── .github
@@ -213,54 +221,35 @@ qa-test-automation-playground
 │       ├── package.json
 │       └── package-lock.json
 │
-├── architecture
-│   └── automation-architecture.md
-│
-├── docs
-│
-├── references
-│   └── bibliography.md
-│
 └── README.md
-```
 
-Essa arquitetura aprimora:
+````
 
-- escalabilidade
-- capacidade de manutenção
-- legibilidade
-- integração de CI
+This architecture improves:
+
+- scalability
+- maintainability
+- readability
+- CI pipeline integration
 
 ---
 
-## 🔺 Real Test Pyramid of This Project
+# 🔺 Real Test Pyramid in This Project
 
-This project focuses primarily on **End-to-End functional validation**, covering the main user journeys of the SauceDemo application.
+This project focuses primarily on **End-to-End functional testing**, validating the main user journeys.
 
 | Layer | Description |
 |------|-------------|
-| E2E Tests | Validate complete user flows such as login, inventory and cart |
-| Page Objects | Encapsulate UI interactions and improve maintainability |
+| E2E Tests | Validate login, inventory and cart flows |
+| Page Objects | Encapsulate UI interactions |
 | Fixtures | Store reusable test data |
-| CI Pipeline | Executes automated tests using GitHub Actions |
-
-### Current automated scenarios
-
-- Login with valid credentials  
-- Login with invalid credentials  
-- Login validation with empty fields  
-- Error message validation  
-- Inventory page validation  
-- Add product to cart  
-- Remove product from cart  
-
-**Total automated scenarios: 7**
+| CI Pipeline | Executes automated tests |
 
 ---
 
-## 📦 Example Automated Test
+# 📦 Example Automated Test
 
-Example of login validation implemented using Cypress.
+Example of login validation using Cypress.
 
 ```javascript
 describe("Login Flow - SauceDemo", () => {
@@ -275,10 +264,10 @@ describe("Login Flow - SauceDemo", () => {
     cy.get('[data-test="login-button"]').click()
 
     cy.url().should("include", "inventory")
+
   })
 
 })
-
 ````
 
 ---
@@ -309,9 +298,9 @@ Concepts used in this repository are inspired by established **Software Engineer
 
 # 🚀 Future Improvements
 
-Planned improvements for this repository:
+Planned improvements:
 
-* CI/CD pipelines executing automated tests
+* CI/CD pipeline expansion
 * API testing examples
 * performance testing demonstrations
 * advanced automation architecture
@@ -336,3 +325,20 @@ LinkedIn
 ---
 
 ⭐ This repository is part of my **QA Automation Engineering portfolio**.
+
+```
+
+---
+
+# O que melhorou nessa versão
+- remove duplicações de texto
+- estrutura mais profissional
+- README mais **escaneável para recrutadores**
+- inglês padronizado
+- hierarquia clara
+- organização de seções
+
+---
+
+💡 Se quiser, no próximo passo posso te mostrar **3 melhorias que fazem esse repositório parecer de QA pleno/sênior no GitHub** (são mudanças rápidas mas muito impactantes).
+```
